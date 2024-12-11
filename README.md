@@ -66,13 +66,11 @@ Retrieves a list of all monsters.
 ```json
 [
     {
-        "id": 1,
         "name": "Rathalos",
         "type": "Flying Wyvern",
         "description": "A fire-breathing monster with red scales."
     },
     {
-        "id": 2,
         "name": "Zinogre",
         "type": "Fanged Wyvern",
         "description": "A thunder-infused monster with great speed."
@@ -92,7 +90,6 @@ Retrieves a monster's details by its name.
 
 ```json
 {
-    "id": 1,
     "name": "Rathalos",
     "type": "Flying Wyvern",
     "description": "A fire-breathing monster with red scales."
@@ -117,7 +114,6 @@ Adds a new monster to the database.
 
 ```json
 {
-    "id": 6,
     "name": "Magnamalo",
     "type": "Fanged Beast",
     "description": "A terrifying monster with a powerful explosive attack."
@@ -126,36 +122,16 @@ Adds a new monster to the database.
 
 ### Example POST Request (Using Postman)
 
-To add 5 new monsters, send a `POST` request with a body like this:
+To add a new monsters, send a `POST` request with a body like this:
 
 ```json
-[
-    {
-        "name": "Apex Rathalos",
-        "type": "Flying Wyvern",
-        "description": "A more powerful variant of Rathalos with a fiery rage."
-    },
-    {
-        "name": "Magnamalo",
-        "type": "Fanged Beast",
-        "description": "A terrifying monster with a powerful explosive attack."
-    },
-    {
-        "name": "Valstrax",
-        "type": "Elder Dragon",
-        "description": "An Elder Dragon that flies through the air at immense speeds."
-    },
-    {
-        "name": "Brachydios",
-        "type": "Brute Wyvern",
-        "description": "A brute wyvern with explosive slime capabilities."
-    },
+
     {
         "name": "Kushala Daora (Prime)",
         "type": "Elder Dragon",
         "description": "A stronger version of Kushala Daora with enhanced wind control."
     }
-]
+
 ```
 
 ### Database Population
