@@ -9,6 +9,7 @@ import java.util.List;
 
 @Service
 public class Monster_Service {
+
     @Autowired
     private Monster_Repository monster_repository;
 
@@ -26,5 +27,9 @@ public class Monster_Service {
 
     public void deleteMonster(Long id) {
         monster_repository.deleteById(id);
+    }
+
+    public Monster getMonsterById(Long id) {
+        return monster_repository.findById(id).orElse(null);
     }
 }
