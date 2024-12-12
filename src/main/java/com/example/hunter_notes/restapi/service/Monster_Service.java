@@ -1,16 +1,14 @@
 package com.example.hunter_notes.restapi.service;
 
 import com.example.hunter_notes.restapi.model.Monster;
-
-import java.util.List;
-
 import com.example.hunter_notes.restapi.repository.Monster_Repository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class Monster_Service {
-
     @Autowired
     private Monster_Repository monster_repository;
 
@@ -29,5 +27,4 @@ public class Monster_Service {
     public void deleteMonster(Long id) {
         monster_repository.deleteById(id);
     }
-
 }
